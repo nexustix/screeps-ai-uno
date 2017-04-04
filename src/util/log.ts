@@ -15,3 +15,7 @@ export function error(msg: string):void {
 export function request(msg: string):void {
     console.log(`<font color='${"orange"}'>${"< / > "+ msg}</font>`)
 }
+
+export function debug(msg: string):void {
+    console.log(`<font color='${"CadetBlue"}'>${"< D > "+ msg}</font>`)
+}

@@ -32,6 +32,7 @@ function _cleanMemory(): void {
 
 
 export function loop() {
+    log.info("Start Turn: " + String(Game.time));
     creepManager.run();
 
 
@@ -67,4 +68,5 @@ export function loop() {
         Game.spawns[i].createCreep(prospector.makeBlueprint(1), "bernhard", {"role":"prospector"});
     }
     */
+    log.info("Stop Turn: " + String(Game.time));
 }
